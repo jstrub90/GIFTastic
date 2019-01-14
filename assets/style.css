@@ -1,0 +1,8 @@
+.jumbotron {
+    background-image: url(images/landscape-pano.jpg);
+    background-size: cover;
+    height: 350px;
+    color: white;
+    text-align: center;
+    text-emphasis: bold;
+}
