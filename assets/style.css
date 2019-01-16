@@ -1,3 +1,7 @@
+body {
+    background-image: url(images/underwater.jpg);
+}
+
 .jumbotron {
     background-image: url(images/landscape-pano.jpg);
     background-size: cover;
