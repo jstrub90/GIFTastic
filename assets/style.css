@@ -6,3 +6,19 @@
     text-align: center;
     text-emphasis: bold;
 }
+
+.gifs-div {
+    float: left;
+}
+
+.add-gifs {
+    float: right;
+}
+
+.btn-primary {
+    padding: 10px;
+}
+
+.btn-success {
+    margin-left: 8px;
+}

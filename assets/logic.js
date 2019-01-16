@@ -7,7 +7,7 @@ $(document).ready(function(){
             url: queryURL,
             method: 'GET'
         })
-        .done(function(response) {
+        .then(function(response) {
 
 
             console.log(response)
@@ -41,7 +41,7 @@ $(document).ready(function(){
                 natureDiv.prependTo($('#gifs'));
             }
 
-            $('.anImg').on('click', function() {
+            $('.natImg').on('click', function() {
         
                 var state = $(this).attr('data-state'); 
                 console.log(this);
@@ -64,17 +64,12 @@ $(document).ready(function(){
 var natureGifs = [''];
 
     
-        //This function "adds" the buttons 
-
-        // handles the event when clicked
         $('#submitButton').on('click', function(){
             var natureButton = $("#gif-input").val();
-            //adds the new animal
 
-            var newButton = $("<button/>").addClass( "btn btn-info landscape").attr('data-name',natureButton).html(natureButton).css({'margin': '5px'});
+            var newButton = $("<button/>").addClass( "btn btn-primary landscape").attr('data-name',natureButton).html(natureButton);
             
             $("#landscapebuttons").append(newButton);
-                console.log("Work");
 
             queryURL = "https://api.giphy.com/v1/gifs/search?q=" + natureButton + "&api_key=iRKDe4cGfkqhdC7ypGjOjCsIzUisj5ax&limit=10";
                 console.log(natureButton);
